@@ -1,0 +1,31 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="mateus.nogueira" id="db.author-1">
+        <createTable tableName="authors">
+            <column autoIncrement="true" name="id_author" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+
+            <column name="tx_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+    
+     <changeSet id="db.author-2" author="mateus.nogueira">
+        <comment>Insert values in database</comment>
+        <sql>
+            INSERT INTO authors(id_author,tx_name) VALUES ('1','Mateus');
+            INSERT INTO authors(id_author,tx_name) VALUES ('2','Mario');
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
