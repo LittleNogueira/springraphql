@@ -75,4 +75,21 @@ mutation {
 }
 ```
 
+#### Create Book
+
+###### Request
+
+
+```graphql
+mutation {
+  createBook(book: {
+    	name: "Novo livro", 
+    	isbn: 4234
+  }, idAuthor: 1000) {
+    id
+    name
+  }
+}
+```
+
 Thank you! :smiley:	
