@@ -1,5 +1,7 @@
 package br.com.zup.springraphql.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,11 @@ public class AuthorService {
 	private AuthorRepository authorRepository;
 	
 	public Author findAuthor(String name) {
-		return this.authorRepository.findByName(name);
+		return authorRepository.findByName(name);
+	}
+	
+	public List<Author> findAll(){
+		return authorRepository.findAll();
 	}
 	
 }

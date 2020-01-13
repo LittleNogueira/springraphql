@@ -1,5 +1,7 @@
 package br.com.zup.springraphql.graphql;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +20,10 @@ public class AuthorGraphQL implements GraphQLMutationResolver, GraphQLQueryResol
 
     public Author findAuthor(String name){
         return authorService.findAuthor(name);
+    }
+    
+    public List<Author> findAllAuthors(){
+    	return authorService.findAll();
     }
 	
 }
