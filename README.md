@@ -19,7 +19,7 @@ mvn clean spring-boot:run
 
 ```
 
-Congratulations, app is ready to use :tada:	:confetti_ball: :balloon:
+Congratulations, app is ready to use in <a target="_blank">http://localhost:8080/graphiql</a> :tada:	:confetti_ball: :balloon:
 
 ### Queries for GraphQL
 
