@@ -2,7 +2,7 @@
 
 ## About project
 
-The principal objective of this project is study a little about <a href="https://graphql.org/" target="_blank" >GraphQl</a>.
+The principal objective of this project is study a little about <a href="https://graphql.org/" target="_blank" >GraphQL</a>.
 
 ### Configure project
 
