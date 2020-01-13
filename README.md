@@ -19,4 +19,44 @@ mvn clean spring-boot:run
 
 ```
 
-Congratulation the app is ready to use :tada:	:confetti_ball: :balloon:
+Congratulation, app is ready to use :tada:	:confetti_ball: :balloon:
+
+### Queries for GraphQL
+
+#### Find Author
+
+###### Request
+
+```graphql
+query {
+  findAuthor(name: "Mateus") {
+    id,
+    name,
+    books {
+      name
+      isbn
+    }
+  }
+}
+```
+
+#### Find All Authors
+
+###### Request
+
+```graphql
+query {
+  findAllAuthors {
+    id,
+    name,
+    books {
+      name
+      isbn
+    }
+  }
+}
+```
+
+Thank you! :smiley:	
+
+
