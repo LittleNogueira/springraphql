@@ -11,7 +11,7 @@ Is required <a href="https://docs.docker.com/docker-for-windows/install/" target
 After clone this project, enter in folder of project and execute the followings commands.
 
 ```
-cd /path/project/
+cd /path/project/springraphql
 
 docker run -p "5432:5432" -e POSTGRES_DB='springraphql' -e POSTGRES_PASSWORD='postgres' -e POSTGRES_USER='postgres' -d postgres:9.4
 
