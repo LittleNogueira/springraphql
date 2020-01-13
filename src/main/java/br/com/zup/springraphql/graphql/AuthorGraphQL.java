@@ -25,5 +25,9 @@ public class AuthorGraphQL implements GraphQLMutationResolver, GraphQLQueryResol
     public List<Author> findAllAuthors(){
     	return authorService.findAll();
     }
+    
+    public Author createAuthor(Author author) {
+    	return authorService.save(author);
+    }
 	
 }

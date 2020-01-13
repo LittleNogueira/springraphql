@@ -5,5 +5,5 @@ type Author {
 }
 
 input AuthorInput {
-    name: String
+    name: String!
 }

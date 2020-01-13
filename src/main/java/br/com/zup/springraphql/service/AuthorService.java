@@ -24,4 +24,8 @@ public class AuthorService {
 		return authorRepository.findAll();
 	}
 	
+	public Author save(Author author) {
+		return authorRepository.save(author);
+	}
+	
 }

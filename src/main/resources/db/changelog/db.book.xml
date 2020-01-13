@@ -31,10 +31,10 @@
      <changeSet id="db.book-2" author="mateus.nogueira">
         <comment>Insert values in database</comment>
         <sql>
-            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('1','Livro 1','1234');
-            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('1','Livro 2','1236');
-            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('2','Livro 3','1235');
-            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('2','Livro 4','1237');
+            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('1000','Livro 1','1234');
+            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('1000','Livro 2','1236');
+            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('2000','Livro 3','1235');
+            INSERT INTO books(id_author,tx_name,nb_isbn) VALUES ('2000','Livro 4','1237');
         </sql>
     </changeSet>
 

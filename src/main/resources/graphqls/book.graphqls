@@ -3,3 +3,9 @@ type Book {
 	name: String,
 	isbn: Int
 }
+
+input BookInput {
+	name: String!,
+	isbn: Int!,
+	id_author: Int!
+}

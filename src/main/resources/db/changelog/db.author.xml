@@ -23,8 +23,8 @@
      <changeSet id="db.author-2" author="mateus.nogueira">
         <comment>Insert values in database</comment>
         <sql>
-            INSERT INTO authors(id_author,tx_name) VALUES ('1','Mateus');
-            INSERT INTO authors(id_author,tx_name) VALUES ('2','Mario');
+            INSERT INTO authors(id_author,tx_name) VALUES ('1000','Mateus');
+            INSERT INTO authors(id_author,tx_name) VALUES ('2000','Mario');
         </sql>
     </changeSet>
 

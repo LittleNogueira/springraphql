@@ -2,3 +2,7 @@ type Query {
     findAuthor(name: String): Author
     findAllAuthors: [Author]
 }
+
+type Mutation {
+	createAuthor(author: AuthorInput): Author
+}
