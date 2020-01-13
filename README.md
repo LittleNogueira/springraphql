@@ -57,6 +57,22 @@ query {
 }
 ```
 
+### Mutations for GraphQL
+
+#### Create Author
+
+###### Request
+
+
+```graphql
+mutation {
+  createAuthor(author:{
+    name:"Novo usuario"
+  }){
+    id,
+    name
+  }
+}
+```
+
 Thank you! :smiley:	
-
-
