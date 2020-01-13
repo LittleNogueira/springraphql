@@ -13,12 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import lombok.Getter;
-import lombok.Setter;
-
 @Entity
 @Table(name = "authors")
-@Getter	@Setter
 public class Author {
 
 	@Id
@@ -29,8 +25,27 @@ public class Author {
 	@Column(name = "tx_name")
 	private String name;
 	
-	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinColumn(name = "id_author", nullable = false)
-	private List<Book> books;	
+	@OneToMany(mappedBy = "author",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	private List<Book> books;
+	
+	public Long getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Book> getBooks() {
+		return books;
+	}
+
+	public void setBooks(List<Book> books) {
+		this.books = books;
+	}
 	
 }

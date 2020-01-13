@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import com.google.common.base.Optional;
 
 import br.com.zup.springraphql.model.Author;
 import br.com.zup.springraphql.service.AuthorService;
@@ -19,7 +18,7 @@ public class AuthorGraphQL implements GraphQLMutationResolver, GraphQLQueryResol
     private AuthorService authorService;
 
     public Author findAuthor(String name){
-        return authorService.findAuthor(name);
+        return authorService.findByName(name);
     }
     
     public List<Author> findAllAuthors(){

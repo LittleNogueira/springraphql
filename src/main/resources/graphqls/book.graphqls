@@ -6,6 +6,5 @@ type Book {
 
 input BookInput {
 	name: String!,
-	isbn: Int!,
-	id_author: Int!
+	isbn: Int!
 }
