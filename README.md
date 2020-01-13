@@ -8,7 +8,7 @@ The principal objective of this project is study a little about <a href="https:/
 
 Is required <a href="https://docs.docker.com/docker-for-windows/install/" target="_blank" >Docker</a>, <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" >JDK</a> and <a href="https://maven.apache.org/" target="_blank" >Maven</a>
 
-After clone this project, enter in folder of project and execute the followings commands.
+After clone this project, enter in the folder of the project and execute the followings commands.
 
 ```
 cd /path/project/springraphql
@@ -19,7 +19,7 @@ mvn clean spring-boot:run
 
 ```
 
-Congratulation, app is ready to use :tada:	:confetti_ball: :balloon:
+Congratulations, app is ready to use :tada:	:confetti_ball: :balloon:
 
 ### Queries for GraphQL
 
